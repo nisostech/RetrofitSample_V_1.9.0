@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:id="@+id/login_linearlayout_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="login_linearlayout_layout"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/login_editText_userName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="username"
+                android:inputType="textNoSuggestions"
+                android:maxLength="20"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/login_editText_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:password="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/login_linearlayout_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_linearlayout_layout"
+            android:layout_marginTop="40dp">
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:text="login"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
